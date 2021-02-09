@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="519.0" style="-fx-background-color: #d8ac9c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.AddStudentLayoutController">
+   <children>
+      <HBox prefHeight="64.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="studentName" prefHeight="25.0" prefWidth="215.0" style="-fx-border-color: black;" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="73.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="64.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="studentEmail" prefHeight="25.0" prefWidth="219.0" style="-fx-border-color: black;" />
+         </children>
+         <padding>
+            <Insets left="75.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="64.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Department">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="departmentName" prefHeight="25.0" prefWidth="214.0" style="-fx-border-color: black;" />
+         </children>
+         <padding>
+            <Insets left="40.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="64.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="address" prefHeight="44.0" prefWidth="219.0" style="-fx-border-color: black;" />
+         </children>
+         <padding>
+            <Insets left="60.0" top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="64.0" prefWidth="600.0" spacing="120.0">
+         <padding>
+            <Insets left="120.0" top="20.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#saveButtonAction" style="-fx-border-color: black;" text="Save">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#resetButtonAction" style="-fx-border-color: black;" text="Reset">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

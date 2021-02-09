@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.FXMLDocumentController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="112.0" prefWidth="681.0" style="-fx-background-color: #583d72;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#fffdfd" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Management System">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#f2eded" strokeType="OUTSIDE" strokeWidth="0.0" text="Education is the backbone of a nation." />
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="371.0" prefWidth="176.0" spacing="15.0" style="-fx-background-color: #d8ac9c; -fx-border-color: black; -fx-border-width: 0 1 0 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addStudent" prefHeight="57.0" prefWidth="176.0" style="-fx-background-color: #9f5f80;" text="Add Student" textFill="#eee9e9">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#showAllstudents" prefHeight="60.0" prefWidth="176.0" style="-fx-background-color: #9f5f80;" text="Show all students" textFill="#eee9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="mainContent" prefHeight="364.0" prefWidth="665.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

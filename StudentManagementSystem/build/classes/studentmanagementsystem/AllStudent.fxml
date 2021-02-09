@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentmanagementsystem.AllStudentController">
+   <children>
+      <TableView fx:id="StudentTable" prefHeight="424.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="NameCall" prefWidth="117.0" text="Name" />
+          <TableColumn fx:id="EmailCall" prefWidth="162.0" text="Email" />
+            <TableColumn fx:id="DeptCall" prefWidth="97.0" text="Department" />
+            <TableColumn fx:id="AddressCall" prefWidth="143.0" text="Address" />
+        </columns>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#DeletebuttonAction" text="Delete">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
